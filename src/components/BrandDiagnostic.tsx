@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 interface Question {
   q: string;
@@ -176,7 +175,7 @@ export function BrandDiagnostic() {
                 带着你的诊断结果，我们可以做一次针对性的深度解读，帮你进一步判断更适合从哪里开始。
               </p>
               <div className="inline-block mb-4">
-                <Image
+                <img
                   src="/wechat-qr.png"
                   alt="微信：ActionThinker"
                   width={200}
