@@ -21,7 +21,7 @@ export default function GEOPage() {
         subtitle="如果你的品牌在 AI 搜索中被误解、被遗漏或被竞争对手覆盖，你失去的不是流量——是客户对你的第一次信任判断。"
         primaryCTA={{ label: "做 GEO 就绪度自测", href: "#geo-diagnostic" }}
         secondaryCTA={{ label: "查看服务内容", href: "#methodology" }}
-        note="面向 B2B / SaaS / 企业服务 / 专业服务品牌\nCEO 级战略服务 · 非 SEO 技术执行\n已在 3 个品牌站点验证方法论有效性"
+        note={<>面向 B2B / SaaS / 企业服务 / 专业服务品牌<br />CEO 级战略服务 · 非 SEO 技术执行<br />已在 3 个品牌站点验证方法论有效性</>}
       />
 
       <section className="px-6 py-16 bg-bg-alt">
