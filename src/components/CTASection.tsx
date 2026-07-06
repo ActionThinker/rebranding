@@ -1,13 +1,14 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 interface Props {
-  title: string;
-  body?: string;
+  title: ReactNode;
+  body?: ReactNode;
   primaryLabel?: string;
   primaryHref?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
-  note?: string;
+  note?: ReactNode;
 }
 
 export function CTASection({ title, body, primaryLabel, primaryHref, secondaryLabel, secondaryHref, note }: Props) {

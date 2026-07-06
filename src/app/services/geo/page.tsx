@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
 import { GEODiagnostic } from "@/components/GEODiagnostic";
+import { BrandName, brandText } from "@/components/BrandName";
 import { geoSteps, geoDifferentiators, geoFit, geoTiers, geoFaqs } from "@/data/geo";
 
 export const metadata: Metadata = {
@@ -60,7 +61,7 @@ export default function GEOPage() {
 
       <section className="px-6 py-20 bg-bg-alt">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-ink mb-8">为什么是 rebranding</h2>
+          <h2 className="text-2xl font-bold text-ink mb-8">为什么是 <BrandName /></h2>
           <div className="space-y-5">
             {geoDifferentiators.map((d, i) => (
               <div key={i} className="border border-rule rounded-lg p-6">
@@ -70,7 +71,7 @@ export default function GEOPage() {
             ))}
           </div>
           <p className="mt-8 text-sm font-semibold text-ink">
-            GEO 不是 SEO 的延伸，也不是品牌设计的附加项。它是一个需要品牌策略能力和 AI 技术能力同时具备的新领域。而这恰好是 rebranding 的位置。
+            GEO 不是 SEO 的延伸，也不是品牌设计的附加项。它是一个需要品牌策略能力和 AI 技术能力同时具备的新领域。而这恰好是 <BrandName /> 的位置。
           </p>
         </div>
       </section>

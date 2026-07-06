@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { CTASection } from "@/components/CTASection";
+import { BrandName } from "@/components/BrandName";
 import { cases, whitepaper, articles } from "@/data/insights";
 
 export const metadata: Metadata = {
@@ -78,7 +79,7 @@ export default function InsightsPage() {
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-ink mb-6">如果你是第一次接触 rebranding，建议从这里开始阅读。</h2>
+          <h2 className="text-2xl font-bold text-ink mb-6">如果你是第一次接触 <BrandName />，建议从这里开始阅读。</h2>
           <div className="space-y-4">
             {[
               ["先看白皮书", "如果你关心 AI 时代品牌升级的变化，《AI 时代下的企业品牌升级白皮书》是一个很好的起点。"],

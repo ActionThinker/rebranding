@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
+import { BrandName, brandText } from "@/components/BrandName";
 import { problems, services, steps, whyUs, idealClients } from "@/data/home";
 
 export default function HomePage() {
@@ -9,7 +10,7 @@ export default function HomePage() {
     <>
       <HeroSection
         title="为进入新阶段的企业，重构品牌认知与表达系统。"
-        subtitle="rebranding 聚焦品牌升级咨询、品牌识别系统设计与网站内容规划，帮助成长型企业把复杂业务讲清楚，并建立更有说服力的品牌系统。"
+        subtitle={brandText("rebranding 聚焦品牌升级咨询、品牌识别系统设计与网站内容规划，帮助成长型企业把复杂业务讲清楚，并建立更有说服力的品牌系统。")}
         primaryCTA={{ label: "预约品牌诊断", href: "/contact/" }}
         secondaryCTA={{ label: "查看服务内容", href: "/services/" }}
         note={"适用于成长型 B2B / SaaS / 企业服务品牌\n适合品牌升级、官网重构、销售表达优化项目\n从品牌诊断到识别系统与内容规划一体推进"}
@@ -37,7 +38,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl">
           <SectionIntro
             title="我们做的不是单次设计执行，而是品牌升级。"
-            body="rebranding 服务那些已经有业务基础、正在进入新阶段，但品牌表达还没有同步升级的企业。我们关注的不只是品牌是否更好看，而是：客户是否更快理解你是谁、你的价值是否被更准确地表达出来、你的官网、提案和销售材料是否在说同一件事。"
+            body={brandText("rebranding 服务那些已经有业务基础、正在进入新阶段，但品牌表达还没有同步升级的企业。我们关注的不只是品牌是否更好看，而是：客户是否更快理解你是谁、你的价值是否被更准确地表达出来、你的官网、提案和销售材料是否在说同一件事。")}
             emphasis="品牌升级不是视觉翻新，而是把企业当前阶段真正应该被理解的价值，重新组织出来。"
           />
         </div>

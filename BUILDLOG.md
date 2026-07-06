@@ -1,5 +1,15 @@
 # Build Log — rebranding.cc
 
+## 2026-07-06 — Brand Name Styling & Footer Update
+
+**Changes**:
+- Created BrandName component (reBranding with B in accent + extrabold)
+- Created brandText() helper for inline text replacement
+- Updated HeroSection, SectionIntro, CTASection to accept ReactNode props
+- Styled all "rebranding" → reBranding in key JSX: heroes, headings, footer
+- Footer attribution: "An ActionThinker brand." → "Created by ActionThinker & Allen."
+- Metadata strings retained as plain "rebranding" for SEO/AI readability
+
 ## 2026-07-06 — Enterprise GEO Service Productization
 
 **Changes**:

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
+import { brandText } from "@/components/BrandName";
 import { idealClients, states, notFit } from "@/data/fit";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function FitPage() {
     <>
       <HeroSection
         title="我们并不适合所有项目。"
-        subtitle="rebranding 更适合那些已经有业务基础、正在进入新阶段，并希望通过品牌升级提升表达清晰度、专业感与业务说服力的团队。"
+        subtitle={brandText("rebranding 更适合那些已经有业务基础、正在进入新阶段，并希望通过品牌升级提升表达清晰度、专业感与业务说服力的团队。")}
         primaryCTA={{ label: "看看是否适合", href: "#ideal" }}
         secondaryCTA={{ label: "预约品牌诊断", href: "/contact/" }}
       />
@@ -67,7 +68,7 @@ export default function FitPage() {
 
       <CTASection
         title="如果你已经感觉到品牌表达跟不上业务阶段，这通常就是适合聊一聊的时候。"
-        body="你可以带着当前官网、品牌资料、销售提案或业务背景来沟通。我们会先帮助你判断：当前问题是否属于品牌升级范畴、更适合从诊断、识别系统还是网站内容开始、项目是否适合完整推进 rebranding。"
+        body={brandText("你可以带着当前官网、品牌资料、销售提案或业务背景来沟通。我们会先帮助你判断：当前问题是否属于品牌升级范畴、更适合从诊断、识别系统还是网站内容开始、项目是否适合完整推进 rebranding。")}
         primaryLabel="预约品牌诊断"
         primaryHref="/contact/"
         secondaryLabel="提交项目需求"

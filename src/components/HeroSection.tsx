@@ -1,11 +1,12 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 interface Props {
-  title: string;
-  subtitle: string;
+  title: ReactNode;
+  subtitle: ReactNode;
   primaryCTA?: { label: string; href: string };
   secondaryCTA?: { label: string; href: string };
-  note?: string;
+  note?: ReactNode;
 }
 
 export function HeroSection({ title, subtitle, primaryCTA, secondaryCTA, note }: Props) {

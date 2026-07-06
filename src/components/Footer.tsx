@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandName } from "@/components/BrandName";
 
 export function Footer() {
   return (
@@ -6,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap gap-10 justify-between mb-12">
           <div className="min-w-[160px]">
-            <div className="text-lg font-semibold tracking-tight text-ink mb-1">rebranding</div>
+            <div className="text-lg font-semibold tracking-tight text-ink mb-1"><BrandName /></div>
             <p className="text-sm text-muted max-w-[240px] leading-relaxed">
               帮助成长型企业重构品牌认知、识别系统与网站表达。
             </p>
@@ -26,9 +27,9 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-rule pt-6 text-xs text-muted flex flex-wrap gap-4 justify-between">
-          <span>&copy; {new Date().getFullYear()} rebranding.</span>
+          <span>&copy; {new Date().getFullYear()} <BrandName />.</span>
           <span>
-            An <a href="https://actionthinker.com" className="underline hover:text-ink">ActionThinker</a> brand.
+            Created by <a href="https://actionthinker.com" className="underline hover:text-ink">ActionThinker</a> &amp; Allen.
           </span>
         </div>
       </div>

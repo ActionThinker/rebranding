@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BrandName, brandText } from "@/components/BrandName";
 
 interface Question {
   q: string;
@@ -166,7 +167,7 @@ export function BrandDiagnostic() {
               <div className="text-4xl mb-4">{profile.icon}</div>
               <h3 className="text-xl font-bold text-ink mb-3">{profile.title}</h3>
               <p className="text-sm text-muted leading-relaxed mb-3">{profile.desc}</p>
-              <p className="text-sm text-muted leading-relaxed">{profile.recommend}</p>
+              <p className="text-sm text-muted leading-relaxed">{brandText(profile.recommend)}</p>
             </div>
 
             <div className="border border-rule rounded-lg p-8 bg-bg-alt text-center">

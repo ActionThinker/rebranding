@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
+import { brandText } from "@/components/BrandName";
 import { serviceModules, diagnostics, cooperationModes, faqs } from "@/data/services";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function ServicesPage() {
     <>
       <HeroSection
         title="不是所有品牌问题都该从视觉开始。"
-        subtitle="rebranding 提供品牌升级咨询、品牌识别系统设计与网站内容规划服务，帮助成长型企业重新组织品牌认知、统一表达系统，并把品牌真正落地到官网、提案与业务场景中。"
+        subtitle={brandText("rebranding 提供品牌升级咨询、品牌识别系统设计与网站内容规划服务，帮助成长型企业重新组织品牌认知、统一表达系统，并把品牌真正落地到官网、提案与业务场景中。")}
         primaryCTA={{ label: "预约品牌诊断", href: "/contact/" }}
         secondaryCTA={{ label: "提交项目需求", href: "/contact/" }}
         note={"适合品牌升级、官网重构、销售表达优化项目\n支持从单项切入，也支持从诊断到落地的一体化合作\n更适合成长型 B2B / SaaS / 企业服务品牌"}
@@ -104,7 +105,7 @@ export default function ServicesPage() {
 
       <CTASection
         title="如果你已经意识到品牌表达跟不上业务阶段，可以先从一次判断开始。"
-        body="不需要一开始就确定要做完整 rebranding。先把当前问题看清楚，再决定从诊断、识别系统还是网站内容规划开始，通常会更高效。"
+        body={brandText("不需要一开始就确定要做完整 rebranding。先把当前问题看清楚，再决定从诊断、识别系统还是网站内容规划开始，通常会更高效。")}
         primaryLabel="预约品牌诊断" primaryHref="/contact/"
         secondaryLabel="提交项目需求" secondaryHref="/contact/"
         note="通常会在 1-2 个工作日内回复。"

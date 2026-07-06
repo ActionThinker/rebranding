@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
+import { BrandName, brandText } from "@/components/BrandName";
 import { methods, principles } from "@/data/about";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function AboutPage() {
   return (
     <>
       <HeroSection
-        title="rebranding 不是一个泛泛的设计品牌，而是一种工作立场。"
+        title={brandText("rebranding 不是一个泛泛的设计品牌，而是一种工作立场。")}
         subtitle="我们关注的不是把品牌「做得像升级过」，而是帮助企业重新组织品牌认知、视觉系统和网站表达，让品牌真正适配当前阶段。"
         primaryCTA={{ label: "查看服务内容", href: "/services/" }}
         secondaryCTA={{ label: "预约品牌诊断", href: "/contact/" }}
@@ -24,7 +25,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <SectionIntro
             title="很多企业的问题，不是没有设计，而是品牌已经落后于业务。"
-            body="rebranding 的起点，不是为了再做一个「品牌工作室」。更真实的出发点是：在很多项目里，企业真正的问题并不是缺一个 Logo 或缺几页官网，而是：业务已经变了品牌没变、客户已经变了表达没变、公司已经进入新阶段但市场仍然用旧方式理解它。"
+            body={brandText("rebranding 的起点，不是为了再做一个「品牌工作室」。更真实的出发点是：在很多项目里，企业真正的问题并不是缺一个 Logo 或缺几页官网，而是：业务已经变了品牌没变、客户已经变了表达没变、公司已经进入新阶段但市场仍然用旧方式理解它。")}
             emphasis="品牌升级不该只是一次视觉翻新，而应该是一次关于「如何被理解」的重新组织。"
           />
         </div>

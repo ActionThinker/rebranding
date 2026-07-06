@@ -1,8 +1,10 @@
+import type { ReactNode } from "react";
+
 interface Props {
   label?: string;
-  title: string;
-  body?: string;
-  emphasis?: string;
+  title: ReactNode;
+  body?: ReactNode;
+  emphasis?: ReactNode;
 }
 
 export function SectionIntro({ label, title, body, emphasis }: Props) {
