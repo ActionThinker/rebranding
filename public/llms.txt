@@ -12,15 +12,16 @@
 - 品牌识别系统设计：基于品牌认知，建立统一的 Logo、色彩、字体、版式系统
 - 品牌网站内容规划：重构官网内容结构与品牌表达，提升客户信任感和转化
 - 销售表达材料升级：统一提案、案例展示和品牌语言
+- 企业官网 GEO 化：确保品牌在 AI 搜索中被正确发现、准确理解和优先推荐
 
 ## Page Structure
 - `/` — 首页：品牌升级方法论总览
-- `/services/` — 服务内容：诊断、识别系统、网站内容规划、销售材料
+- `/services/` — 服务内容：五类服务模块
+- `/services/geo/` — 企业官网 GEO 化：六步方法论、GEO 就绪度自测
 - `/fit/` — 适合客户：理想客户画像、升级信号、不适合的项目
-- `/insights/` — 案例与观点：3 个案例 + 品牌升级认知文章
-- `/insights/vis-brand-clarity/` — 为什么做了 VIS 品牌还是讲不清楚
-- `/insights/dont-start-with-logo/` — 品牌升级为什么不能从 Logo 开始
-- `/insights/when-to-rebrand/` — 什么时候该做 rebranding
+- `/insights/` — 案例与观点：3 个案例 + 8 篇观点文章 + 1 份白皮书
+- `/insights/why-geo-matters/` — 为什么你的品牌在 AI 搜索中「不存在」
+- `/insights/ai-era-brand-upgrade/` — AI 时代下的企业品牌升级白皮书
 - `/about/` — 关于我们：工作立场、方法与合作原则
 - `/contact/` — 联系：品牌升级快速诊断 + 微信联系
 

@@ -27,6 +27,13 @@ export const serviceModules = [
     solves: "解决：让品牌在商业沟通中保持一致性和说服力",
     cta: "咨询销售材料升级",
   },
+  {
+    tag: "服务五",
+    title: "企业官网 GEO 化",
+    fit: "适合：希望品牌在 AI 搜索中被正确发现和引用的企业",
+    solves: "解决：品牌在 AI 渠道中不可见、被错误描述或缺乏差异化",
+    cta: "了解 GEO 服务",
+  },
 ];
 
 export const diagnostics = [
@@ -34,6 +41,7 @@ export const diagnostics = [
   { title: "如果方向已经明确，但视觉系统明显落后", action: "更适合先做：品牌识别系统设计" },
   { title: "如果最紧迫的问题在官网表达和转化承接", action: "更适合先做：网站内容规划与转化表达设计" },
   { title: "如果品牌已经升级，但销售材料仍然各说各话", action: "更适合先做：提案 / 销售材料品牌化支持" },
+  { title: "如果你不确定品牌在 AI 搜索中是否被正确描述", action: "更适合先做：企业官网 GEO 化" },
 ];
 
 export const cooperationModes = [

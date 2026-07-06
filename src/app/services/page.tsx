@@ -36,7 +36,7 @@ export default function ServicesPage() {
       {/* Service cards */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-ink mb-2">当前主要提供四类服务。</h2>
+          <h2 className="text-2xl font-bold text-ink mb-2">当前主要提供五类服务。</h2>
           <div className="grid sm:grid-cols-2 gap-5 mt-10 mb-16">
             {serviceModules.map((m) => (
               <div key={m.tag} className="border border-rule rounded-lg p-6">
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 <h3 className="font-semibold text-ink mb-3">{m.title}</h3>
                 <p className="text-sm text-muted mb-2">{m.fit}</p>
                 <p className="text-sm text-muted mb-4">{m.solves}</p>
-                <Link href="/contact/" className="text-sm font-semibold text-accent hover:underline">{m.cta} →</Link>
+                <Link href={m.tag === "服务五" ? "/services/geo/" : "/contact/"} className="text-sm font-semibold text-accent hover:underline">{m.cta} →</Link>
               </div>
             ))}
           </div>

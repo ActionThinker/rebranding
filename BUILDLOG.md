@@ -1,5 +1,17 @@
 # Build Log — rebranding.cc
 
+## 2026-07-06 — Enterprise GEO Service Productization
+
+**Changes**:
+- New service page: `/services/geo/` — 企业官网 GEO 化
+- GEO 六步方法论: 诊断 → 规划 → 平台范围 → 行动建议 → 落地 → 效果验证
+- GEO 就绪度自测 (GEODiagnostic): 5 题交互式诊断 + 3 种画像
+- 新增第 5 服务模块「企业官网 GEO 化」到服务页
+- New article: `/insights/why-geo-matters/` — CEO 视角的战略文章
+- Updated sitemap, llms.txt with new routes
+- Services page: 四类→五类, GEO card links to `/services/geo/`
+- Internal validation: enterprise RFP scenario confirms market demand
+
 ## 2026-07-06 — GEO Initialization
 
 **Changes**:
