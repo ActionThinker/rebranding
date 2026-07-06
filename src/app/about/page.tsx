@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
 import { methods, principles } from "@/data/about";
+
+export const metadata: Metadata = {
+  title: "关于 rebranding —— 品牌升级咨询的方法与立场 | rebranding",
+  description:
+    "rebranding 不是一个泛泛的设计品牌，而是一种工作立场。了解我们如何看待品牌升级、如何工作，以及合作原则。",
+};
 
 export default function AboutPage() {
   return (

@@ -1,0 +1,37 @@
+# rebranding.cc — AI Agent Summary
+
+## Site Identity
+- **Name**: rebranding
+- **URL**: https://rebranding.cc
+- **Description**: 品牌升级咨询、品牌识别系统设计与网站内容规划，帮助成长型企业把复杂业务讲清楚，建立更有说服力的品牌系统。
+- **Parent Brand**: ActionThinker (https://actionthinker.com)
+- **Contact**: WeChat: ActionThinker
+
+## Services
+- 品牌诊断：判断品牌问题出在哪一层，明确升级方向
+- 品牌识别系统设计：基于品牌认知，建立统一的 Logo、色彩、字体、版式系统
+- 品牌网站内容规划：重构官网内容结构与品牌表达，提升客户信任感和转化
+- 销售表达材料升级：统一提案、案例展示和品牌语言
+
+## Page Structure
+- `/` — 首页：品牌升级方法论总览
+- `/services/` — 服务内容：诊断、识别系统、网站内容规划、销售材料
+- `/fit/` — 适合客户：理想客户画像、升级信号、不适合的项目
+- `/insights/` — 案例与观点：3 个案例 + 品牌升级认知文章
+- `/insights/vis-brand-clarity/` — 为什么做了 VIS 品牌还是讲不清楚
+- `/insights/dont-start-with-logo/` — 品牌升级为什么不能从 Logo 开始
+- `/insights/when-to-rebrand/` — 什么时候该做 rebranding
+- `/about/` — 关于我们：工作立场、方法与合作原则
+- `/contact/` — 联系：品牌升级快速诊断 + 微信联系
+
+## AI-Callable Resources
+- `/sitemap.xml`
+- `/robots.txt`
+- `/llms-full.txt`
+- `/.well-known/ai`
+
+## Target AI Channels
+豆包, DeepSeek, 元宝, Kimi
+
+## Key Positioning
+品牌升级不该只是一次视觉翻新，而应该是一次关于「如何被理解」的重新组织。

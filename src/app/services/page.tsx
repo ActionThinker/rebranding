@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
 import { serviceModules, diagnostics, cooperationModes, faqs } from "@/data/services";
+
+export const metadata: Metadata = {
+  title: "品牌升级咨询、品牌识别系统设计与官网内容规划服务 | rebranding",
+  description:
+    "从品牌诊断、识别系统设计到网站内容规划的系统性品牌升级服务。先判断问题，再决定做什么——不是所有项目都需要完整 rebranding。",
+};
 
 export default function ServicesPage() {
   return (

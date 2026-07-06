@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { ArticleFrame, H2, P, Emphasis, FrameworkBox, ChecklistBox } from "@/components/ArticleFrame";
+
+export const metadata: Metadata = {
+  title: "品牌升级为什么不能直接从 Logo 开始 | rebranding",
+  description:
+    "Logo 是品牌升级的结果，不是起点。先定义品牌应该如何被理解，再设计它应该长什么样——这个顺序看起来慢，实际上更快。",
+};
 
 export default function Page() {
   return (

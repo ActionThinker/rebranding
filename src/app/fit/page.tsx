@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
 import { idealClients, states, notFit } from "@/data/fit";
+
+export const metadata: Metadata = {
+  title: "你的企业适合品牌升级吗 | rebranding",
+  description:
+    "我们并不适合所有项目。了解 rebranding 更适合哪些客户、品牌升级的常见信号，以及哪些需求不太适合这种合作方式。",
+};
 
 export default function FitPage() {
   return (

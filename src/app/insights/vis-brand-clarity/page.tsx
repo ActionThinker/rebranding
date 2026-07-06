@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { ArticleFrame, H2, H3, P, Emphasis, FrameworkBox, ChecklistBox } from "@/components/ArticleFrame";
+
+export const metadata: Metadata = {
+  title: "做了 VIS 品牌还是讲不清楚？三层诊断框架 | rebranding",
+  description:
+    "问题往往不在视觉缺失，而在认知入口和表达逻辑没有先被建立起来。这篇文章提供一个三层自诊框架，帮你定位品牌问题到底出在哪一层。",
+};
 
 export default function Page() {
   return (

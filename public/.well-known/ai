@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "site": "rebranding.cc",
+  "description": "品牌升级咨询与识别系统设计 — AI 发现端点",
+  "capabilities": [
+    "llms.txt — AI agent summary at /llms.txt",
+    "llms-full.txt — Full content for RAG pipelines at /llms-full.txt",
+    "sitemap.xml — Site structure at /sitemap.xml",
+    "JSON-LD — Structured data on all pages (Organization, Service, FAQPage)",
+    "Brand diagnostic — Interactive self-assessment at /contact/"
+  ],
+  "endpoints": {
+    "llms": "https://rebranding.cc/llms.txt",
+    "llms-full": "https://rebranding.cc/llms-full.txt",
+    "sitemap": "https://rebranding.cc/sitemap.xml",
+    "robots": "https://rebranding.cc/robots.txt",
+    "diagnostic": "https://rebranding.cc/contact/#diagnostic"
+  },
+  "ai_transparency": {
+    "disclosure": "ai-assisted",
+    "system": "Claude (Anthropic)",
+    "operator": "ActionThinker",
+    "compliance": "EU AI Act Article 50"
+  },
+  "parent_brand": {
+    "name": "ActionThinker",
+    "url": "https://actionthinker.com"
+  }
+}

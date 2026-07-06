@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { CTASection } from "@/components/CTASection";
-import { cases, articles } from "@/data/insights";
+import { cases, whitepaper, articles } from "@/data/insights";
+
+export const metadata: Metadata = {
+  title: "品牌升级案例与观点 | rebranding",
+  description:
+    "案例证明我们做过，观点说明我们为什么这样做。查看品牌升级项目案例，阅读关于品牌认知、识别系统和网站表达的深度文章。包含《AI 时代下的企业品牌升级白皮书》。",
+};
 
 export default function InsightsPage() {
   return (
@@ -45,6 +52,19 @@ export default function InsightsPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold text-ink mb-2">观点</h2>
           <p className="text-sm text-muted mb-10">我们会持续公开自己如何判断品牌升级问题。</p>
+
+          <Link
+            href={`/insights/${whitepaper.slug}/`}
+            className="block border-2 border-accent/30 rounded-lg p-6 bg-accent-light hover:border-accent hover:bg-accent-light/80 transition-colors group mb-10"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-xs font-semibold bg-accent text-white px-2 py-0.5 rounded">白皮书</span>
+              <span className="text-xs text-muted">2026 年 7 月</span>
+            </div>
+            <h3 className="text-lg font-bold text-ink mb-2 group-hover:text-accent transition-colors">{whitepaper.title}</h3>
+            <p className="text-sm text-muted leading-relaxed">{whitepaper.desc}</p>
+          </Link>
+
           <div className="grid sm:grid-cols-2 gap-5">
             {articles.map((a, i) => (
               <Link key={i} href={`/insights/${a.slug}/`} className="border border-rule rounded-lg p-5 bg-surface hover:border-accent hover:bg-accent-light transition-colors block group">
@@ -61,7 +81,8 @@ export default function InsightsPage() {
           <h2 className="text-2xl font-bold text-ink mb-6">如果你是第一次接触 rebranding，建议从这里开始阅读。</h2>
           <div className="space-y-4">
             {[
-              ["先看观点", "如果你还在判断品牌升级是否适合当前阶段，建议先读观点文章。"],
+              ["先看白皮书", "如果你关心 AI 时代品牌升级的变化，《AI 时代下的企业品牌升级白皮书》是一个很好的起点。"],
+              ["再看观点", "如果你还在判断品牌升级是否适合当前阶段，建议先读观点文章，理解常见问题和判断方式。"],
               ["再看案例", "如果你已经有明确项目意向，案例更适合帮助你理解这类项目通常如何推进、解决什么问题。"],
               ["最后进入服务页或联系页", "当你已经知道自己的问题大致属于哪个方向时，再进入服务页或联系页会更高效。"],
             ].map(([t, d], i) => (

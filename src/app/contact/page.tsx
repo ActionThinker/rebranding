@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { BrandDiagnostic } from "@/components/BrandDiagnostic";
+
+export const metadata: Metadata = {
+  title: "预约品牌升级诊断与咨询 | rebranding",
+  description:
+    "如果你正在考虑品牌升级，可以先从一次沟通开始。完成 5 道题的品牌升级快速诊断，带着结果来沟通，通常会更高效。",
+};
 
 const scenarios = [
   "你已经确定要做品牌升级，正在找合适的合作方",

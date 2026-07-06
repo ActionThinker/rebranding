@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fafaf8"/>
+  <rect x="60" y="60" width="1080" height="510" rx="16" fill="none" stroke="#e5e0d8" stroke-width="1"/>
+  <text x="600" y="280" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="72" font-weight="700" fill="#1a1a1a">
+    re<tspan fill="#b35c2e">B</tspan>randing
+  </text>
+  <text x="600" y="360" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="28" fill="#6b7280">
+    品牌升级咨询 · 品牌识别系统设计 · 网站内容规划
+  </text>
+  <line x1="400" y1="420" x2="800" y2="420" stroke="#e5e0d8" stroke-width="1"/>
+  <text x="600" y="480" text-anchor="middle" font-family="Geist, system-ui, sans-serif" font-size="22" fill="#6b7280">
+    帮助成长型企业把复杂业务讲清楚，建立更有说服力的品牌系统
+  </text>
+</svg>

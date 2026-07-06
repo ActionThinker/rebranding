@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { ArticleFrame, H2, H3, P, Emphasis, FrameworkBox, ChecklistBox } from "@/components/ArticleFrame";
+
+export const metadata: Metadata = {
+  title: "什么时候该做品牌升级而不是继续修补 | rebranding",
+  description:
+    "七个信号帮你判断是否该考虑 rebranding，一个决策框架帮你区分「修补」和「升级」。品牌升级不是一个二元选择，而是一个光谱。",
+};
 
 export default function Page() {
   return (

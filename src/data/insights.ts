@@ -19,8 +19,19 @@ export const cases = [
   },
 ];
 
+export const whitepaper = {
+  slug: "ai-era-brand-upgrade",
+  title: "AI 时代下的企业品牌升级白皮书",
+  desc: "从 AI 对品牌表达的冲击、机会与应对策略三个维度，重新理解品牌升级在 AI 时代的意义与方法。",
+};
+
 export const articles = [
   { slug: "vis-brand-clarity", title: "为什么很多企业做了 VIS，品牌还是讲不清楚", desc: "因为问题可能从来不在视觉缺失，而在认知入口和表达逻辑没有先被建立起来。" },
   { slug: "dont-start-with-logo", title: "品牌升级项目，为什么不能直接从 Logo 开始", desc: "如果没有先定义品牌应该如何被理解，Logo 很容易变成一次表面翻新。" },
   { slug: "when-to-rebrand", title: "什么时候企业该做 rebranding，而不是继续修修补补", desc: "当业务、客户、销售场景和竞争环境已经变了，但品牌仍然停留在旧阶段时，通常就是信号。" },
+  { slug: "brand-expression-problems", title: "成长型 B2B 企业最常见的品牌表达问题（及如何自查）", desc: "从功能堆叠、价值失焦到页面结构混乱——这些问题会直接影响品牌成熟度和销售说服力。" },
+  { slug: "website-redesign-or-rebrand", title: "官网改版还是品牌升级：如何判断你真正需要的是什么", desc: "官网改版解决的是「信息呈现」问题，品牌升级解决的是「如何被理解」问题。两者不同，但常常被混淆。" },
+  { slug: "brand-upgrade-budget", title: "品牌升级项目的预算该怎么规划", desc: "品牌升级的预算差异很大——从一个诊断到完整 rebranding。这篇文章帮你理解不同投入对应的产出。" },
+  { slug: "founder-to-corporate-brand", title: "从创始人品牌到企业品牌：成长型公司的品牌过渡", desc: "当公司从「创始人就是品牌」过渡到「品牌独立于创始人」时，需要一次系统性的品牌认知重构。" },
+  { slug: "after-rebrand-launch", title: "品牌升级之后：如何让新品牌真正进入业务场景", desc: "品牌升级的价值不在交付那一刻，而在后续能否被真正用起来。这篇文章提供落地清单和常见陷阱。" },
 ];
