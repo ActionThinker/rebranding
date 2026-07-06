@@ -1,14 +1,14 @@
 import { HeroSection } from "@/components/HeroSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { CTASection } from "@/components/CTASection";
-import { methods, strengthsList, principles } from "@/data/about";
+import { methods, principles } from "@/data/about";
 
 export default function AboutPage() {
   return (
     <>
       <HeroSection
         title="rebranding 不是一个泛泛的设计品牌，而是一种工作立场。"
-        subtitle="我们关注的不是把品牌做得像升级过，而是帮助企业重新组织品牌认知、视觉系统和网站表达，让品牌真正适配当前阶段。"
+        subtitle="我们关注的不是把品牌「做得像升级过」，而是帮助企业重新组织品牌认知、视觉系统和网站表达，让品牌真正适配当前阶段。"
         primaryCTA={{ label: "查看服务内容", href: "/services/" }}
         secondaryCTA={{ label: "预约品牌诊断", href: "/contact/" }}
       />
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <SectionIntro
             title="很多企业的问题，不是没有设计，而是品牌已经落后于业务。"
-            body="rebranding 的起点，不是为了再做一个品牌工作室。更真实的出发点是：在很多项目里，企业真正的问题并不是缺一个 Logo 或缺几页官网，而是：业务已经变了品牌没变、客户已经变了表达没变、公司已经进入新阶段但市场仍然用旧方式理解它。"
+            body="rebranding 的起点，不是为了再做一个「品牌工作室」。更真实的出发点是：在很多项目里，企业真正的问题并不是缺一个 Logo 或缺几页官网，而是：业务已经变了品牌没变、客户已经变了表达没变、公司已经进入新阶段但市场仍然用旧方式理解它。"
             emphasis="品牌升级不该只是一次视觉翻新，而应该是一次关于「如何被理解」的重新组织。"
           />
         </div>
@@ -28,9 +28,9 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-ink mb-8">我们把品牌升级看作一项从认知到表达的系统工作。</h2>
           <div className="space-y-6">
             {[
-              ["第一层：品牌认知", "你是谁，服务谁，核心价值是什么，客户为什么要更快、更准确地理解你。"],
+              ["第一层：品牌认知", "你是谁，服务谁，核心价值是什么。"],
               ["第二层：品牌识别", "当认知清晰之后，如何通过 Logo、色彩、字体、图形和版式建立稳定表达。"],
-              ["第三层：品牌落地", "品牌如何进入官网、提案、销售材料和实际沟通场景，而不是只停留在规范手册里。"],
+              ["第三层：品牌落地", "品牌如何进入官网、提案、销售材料和实际沟通场景。"],
             ].map(([t, d], i) => (
               <div key={i} className="border-l-2 border-accent pl-5">
                 <h3 className="font-semibold text-ink mb-1">{t}</h3>
@@ -58,20 +58,6 @@ export default function AboutPage() {
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-ink mb-8">我们尤其擅长处理这些并不简单的问题。</h2>
-          <div className="grid sm:grid-cols-2 gap-5">
-            {strengthsList.map((s, i) => (
-              <div key={i} className="border border-rule rounded-lg p-5">
-                <h3 className="font-semibold text-ink mb-1 text-sm">{s.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-20 bg-bg-alt">
-        <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold text-ink mb-8">我们的合作原则很简单。</h2>
           <div className="grid sm:grid-cols-2 gap-5">
             {principles.map((p, i) => (
@@ -84,7 +70,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 py-20 text-center">
+      <section className="px-6 py-20 bg-bg-alt text-center">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-4">一句话概括</p>
           <p className="text-xl font-bold text-ink mb-4">帮助成长型企业把复杂业务讲清楚，并重构品牌认知、识别系统与网站表达。</p>
@@ -95,8 +81,10 @@ export default function AboutPage() {
       <CTASection
         title="如果你认同「品牌升级不该只是做得更好看」，可以从这里开始。"
         body="你可以先预约一次品牌诊断沟通，带着当前官网、品牌资料、提案或项目背景来。我们会先帮助你判断：当前更适合从哪里开始。"
-        primaryLabel="预约品牌诊断" primaryHref="/contact/"
-        secondaryLabel="查看服务内容" secondaryHref="/services/"
+        primaryLabel="预约品牌诊断"
+        primaryHref="/contact/"
+        secondaryLabel="查看服务内容"
+        secondaryHref="/services/"
       />
     </>
   );

@@ -18,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-rule bg-bg/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 h-14">
         <Link href="/" className="text-lg font-semibold tracking-tight text-ink">
-          rebranding
+          re<span className="text-accent font-extrabold">B</span>randing
         </Link>
         <nav className="hidden md:flex items-center gap-7">
           {links.map((l) => (
