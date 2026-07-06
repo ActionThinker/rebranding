@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-faint: #d1d5db;
+  --color-surface: #ffffff;
+  --color-bg: #fafaf8;
+  --color-bg-alt: #f4f3ef;
+  --color-accent: #b35c2e;
+  --color-accent-light: #fdf6f0;
+  --color-rule: #e5e0d8;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  color: var(--color-ink);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
