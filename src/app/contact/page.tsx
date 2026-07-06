@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/HeroSection";
 import { BrandDiagnostic } from "@/components/BrandDiagnostic";
+import { WeChatModal } from "@/components/WeChatModal";
 import { brandText } from "@/components/BrandName";
 
 export const metadata: Metadata = {
@@ -37,6 +38,8 @@ export default function ContactPage() {
         title="如果你正在考虑品牌升级，可以先从一次沟通开始。"
         subtitle="无论你目前更想做品牌诊断、识别系统、官网内容规划，还是还不确定问题到底出在哪里，都可以先把现状和目标发给我们。"
         note={"• 适合品牌升级、官网重构、销售表达优化项目\n• 支持先判断，再决定合作方式\n• 通常会在 1-2 个工作日内回复"}
+        primaryCTA={{ label: "添加微信咨询", href: "#wechat-quick" }}
+        secondaryCTA={{ label: "做品牌诊断", href: "#diagnostic" }}
       />
 
       <section className="px-6 py-16 bg-bg-alt">
@@ -58,6 +61,30 @@ export default function ContactPage() {
                 <p className="text-sm text-muted leading-relaxed flex gap-2"><span className="text-accent shrink-0">—</span> {s}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="wechat-quick" className="px-6 py-16 bg-bg-alt text-center">
+        <div className="mx-auto max-w-xl">
+          <h2 className="text-xl font-bold text-ink mb-4">不想做诊断？可以直接加微信聊。</h2>
+          <p className="text-sm text-muted leading-relaxed mb-6">
+            如果你已经有明确的项目意向，或者更习惯直接沟通，可以扫码或搜索添加微信。把当前官网、品牌资料或项目背景发过来，我们会先帮你判断。
+          </p>
+          <div className="inline-block mb-6">
+            <img
+              src="/wechat-qr.png"
+              alt="微信：ActionThinker"
+              width={200}
+              height={200}
+              className="rounded-lg mx-auto"
+            />
+          </div>
+          <p className="text-sm font-semibold text-ink mb-1">ActionThinker</p>
+          <p className="text-xs text-muted mb-6">扫码或搜索添加 · 24 小时内本人回复</p>
+          <div className="flex justify-center gap-3 flex-wrap">
+            <WeChatModal />
+            <a href="#diagnostic" className="rounded-md border border-faint px-6 py-3 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors">先做品牌诊断 →</a>
           </div>
         </div>
       </section>
@@ -94,11 +121,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-bg-alt text-center">
+      <section className="px-6 py-20 bg-bg-alt text-center">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-2xl font-bold text-ink mb-4">如果你已经感觉到品牌表达不再适合当前阶段，就值得先聊一次。</h2>
           <p className="text-sm text-muted leading-relaxed mb-8">不需要一开始就定义完整项目。先做诊断，再带着结果来沟通，通常会更高效。</p>
-          <a href="#diagnostic" className="inline-block rounded-md bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent/90 transition-colors">开始品牌诊断</a>
+          <div className="flex justify-center gap-3 flex-wrap">
+            <WeChatModal />
+            <a href="#diagnostic" className="rounded-md border border-faint px-6 py-3 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors">开始品牌诊断</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 border-t border-rule text-center">
+        <div className="mx-auto max-w-xl">
+          <p className="text-sm text-muted">
+            也可通过邮件联系：<a href="mailto:chenlu@opclab.cn" className="text-accent hover:underline font-medium">chenlu@opclab.cn</a>
+          </p>
+          <p className="text-xs text-muted mt-1">通常 1-2 个工作日内回复</p>
         </div>
       </section>
     </>
