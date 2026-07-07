@@ -43,6 +43,9 @@ export default function InsightsPage() {
                   <div><div className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">处理方式</div><p className="text-muted leading-relaxed">{c.approach}</p></div>
                   <div><div className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">项目价值</div><p className="text-muted leading-relaxed">{c.value}</p></div>
                 </div>
+                <div className="mt-4">
+                  <Link href={`/insights/cases/${c.slug}/`} className="text-sm font-semibold text-accent hover:underline">查看案例详情 →</Link>
+                </div>
               </div>
             ))}
           </div>
