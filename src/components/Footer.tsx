@@ -29,7 +29,7 @@ export function Footer() {
         <div className="border-t border-rule pt-6 text-xs text-muted flex flex-wrap gap-4 justify-between">
           <span>&copy; {new Date().getFullYear()} <BrandName />.</span>
           <span>
-            Created by <a href="https://actionthinker.com" className="underline hover:text-ink">ActionThinker</a> &amp; Allen.
+            Created by <a href="https://actionthinker.com" className="underline hover:text-ink">ActionThinker</a> &amp; OPClab.
           </span>
         </div>
       </div>
